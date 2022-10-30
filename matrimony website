@@ -1,0 +1,468 @@
+HTML CODE:-
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .form-control {
+            background-color: white;
+        }
+
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1667031580/matrimony_logo_x79biz.jpg" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#homeSection" id="navItem-1">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#whoAreWeSection" id="navItem-2">Who are we</a>
+                    <a class="nav-link" href="#whyUsSection" id="navItem-3">Why us</a>
+                    <a class="nav-link" href="#formSection" id="navItem-4">Form</a>
+                    <a class="nav-link" href="#locateUsSection" id="navItem-5">Locate us</a>
+                    <a class="nav-link" href="#contactUsSection" id="navItem-6">Contact us</a>
+                    <a class="nav-link" href="#sectionLogIn" id="navItem-7">Log In</a>
+                    <!-- <a class="nav-link" href="#sectionRegister" id="navItem-8">Register</a> -->
+                    <a class="nav-link" href="#termsConditionsSection" id="navItem-9">Terms & Conditions</a>
+                    <a class="nav-link" href="#grievanceComplaintsSection" id="navItem-10">Grievance/Complaints</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-section-bg-container d-flex flex-column justify-content-center">
+        <div class="text-center">
+            <!-- <button class="login-button" onclick="display('sectionLogIn')">Login</button> -->
+            <div id="root">
+                <h1 class="text-center page-heading"> Hello User, Welcome! </h1>
+                <div class="d-flex flex-row justify-content-center">
+                    <button class="btn btn-primary mr-2" onclick="register()"> Register </button>
+                    <button class="btn btn-success ml-2" onclick="login()"> Login </button>
+                </div>
+            </div>
+            <div id="registerPage">
+                <h1 class="page-heading"> Register here </h1>
+                <input type="text" placeholder="Enter Name" />
+                <input type="text" placeholder="Enter Email" />
+                <input type="text" placeholder="Enter password" />
+                <button class="btn btn-primary" onclick="registerBtn()"> Submit </button>
+            </div>
+            <div id="loginPage">
+                <h1 class="page-heading"> Login here </h1>
+                <input type="text" placeholder="Enter Name" />
+                <input type="text" placeholder="Enter password" />
+                <button class="btn btn-primary" onclick="loginBtn()"> Submit </button>
+            </div>
+            <div id="homePage" class="text-center">
+                <h1 class="page-heading"> Home Page </h1>
+                <a href="#homeSection" class="page-heading"> This your Home Page </a>
+                <button class="btn btn-danger" onclick="logoutBtn()"> Logout </button>
+            </div>
+
+        </div>
+    </div>
+    <!-- </div> -->
+
+    <div class="who-are-we-section m-5" id="whoAreWeSection">
+        <h1 class="w-heading">Who are we?</h1>
+        <p class="w-para">
+            Matrimony.com Limited, whose flagship brand is BharatMatrimony, is a network of matchmaking services. More than 4000 employees work at over 20 offices across India.
+            The company also has offices in the US and Dubai.
+            The company has pioneered several matrimony-related services such as Assistedmatrimony,
+            a personalized matchmaking service for busy professionals where a trained relationship manager does the matches and facilitates meetings between prospects. Its premium service, Elite Matrimony,
+            offers matchmaking services for the upper crust that ensures privacy and confidentiality during the process.
+            Traded as: NSE: MATRIMONY <br />
+            Services: related to marriage <br />
+            Products: matrimonial <br />
+            Number of employees: 4,000+
+        </p>
+        <h1 class="w-heading">Awards</h1>
+        <p class="w-para">Bharat Matrimony TV commercial rated among top 10 Ads of 2013 <br />
+            Ranked India's most trusted matrimony brand <br />
+            Best PE/ VC backed consumer internet company! <br />
+            Wins Red Herring 100 Global Award </p> <br />
+        <div class="aimages-container d-flex flex-row justify-content-center">
+            <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1667062721/award1_chz5yh.jpg" class="m-3" />
+            <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1667062847/award2_jgurgq.jpg" class="m-3" />
+            <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1667062927/award3_nlesmi.webp" class="m-3" />
+        </div>
+    </div>
+    <div class="why-us-section" id="whyUsSection">
+        <p class="w-para1">
+            The Best Matrimonial Services can help you get the most suitable life partner.
+            The greatest advantage of working with a matrimonial site is that they have a huge data base of both bride and groom profiles.
+            Therefore as a registered member, you can gain access to a vast number of options in front of you</p>
+    </div>
+    <div>
+        <div class="form-container">
+            <div class="form-section" id="formSection">
+                <div class="container">
+                    <h1 class="form-heading">Form</h1>
+                    <form id="signUpForm">
+                        <div class="mb-3">
+                            <h1 class="heading">Email</h1>
+                            <input type="text" class="form-control" id="email" placeholder="Enter your email here" />
+                            <p class="paragraph" id="emailPara"></p>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div style="width:30%">
+                                <h1 class="heading">First Name</h1>
+                                <input type='text' id="firstName" class="form-control" />
+                                <p class="paragraph" id="firstNamePara"></p>
+                            </div>
+                            <div style="width:30%">
+                                <h1 class="heading">Middle Name</h1>
+                                <input type="text" id="middleName" class="form-control" />
+                                <p class="paragraph" id="middleNamePara"></p>
+                            </div>
+                            <div style="width:30%">
+                                <h1 class="heading">Last Name</h1>
+                                <input type="text" id="lastName" class="form-control" />
+                                <p class="paragraph" id="lastNamePara"></p>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="heading">Gender</h1>
+                            <input type="radio" name="gender" id="genderMale" value="Male" checked />
+                            <label for="genderMale">Male</label>
+                            <input type="radio" name="gender" id="genderFemale" value="Female" class="ml-2" />
+                            <label for="genderFemale">Female</label>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="heading">Date Of Birth</h1>
+                            <input type="date">
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="heading">Caste</h1>
+                            <input type="text" class="form-control" id="caste" />
+                            <p class="paragraph" id="castePara"></p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="heading">Permanent Residence</h1>
+                            <input type="text" class="form-control" id="permanent" />
+                            <p class="paragraph" id="permanentPara"></p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="heading">Current Residence</h1>
+                            <input type="text" class="form-control" id="current" />
+                            <p class="paragraph" id="currentPara"></p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="heading">Occupation</h1>
+                            <input type="text" class="form-control" id="occupation" />
+                            <p class="paragraph" id="occupationPara"></p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="heading">Working Company</h1>
+                            <input type="text" class="form-control" id="company" />
+                            <p class="paragraph" id="companyPara"></p>
+                        </div>
+                        <div>
+                            <h1 class="heading">Net Salary, CTC</h1>
+                            <select name="dropdown" id="classSelection">
+                                <option value="CSE-3A" id="sec" selected>Below 5LPA</option>
+                                <option value="CSE-3B" id="sec">5-10 LPA</option>
+                                <option value="CSE-3C" id="sec">10-15LPA</option>
+                                <option value="CSE-3D" id="sec">15-20 LPA</option>
+                                <option value="CSE-3E" id="sec">Above 20 LPA</option>
+                            </select>
+                            <p class="paragraph" id="sectionPara"></p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="heading">Total Experiance</h1>
+                            <input type="text" class="form-control" id="experiance" />
+                            <p class="paragraph" id="experiancePara"></p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="heading">Caste Preference</h1>
+                            <input type="text" class="form-control" id="preference" />
+                            <p class="paragraph" id="preferencePara"></p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="heading">Age Preference</h1>
+                            <input type="text" class="form-control" id="age" />
+                            <p class="paragraph" id="agePara"></p>
+                        </div>
+                        <!-- <div class="mb-3">
+                            <h1 class="heading">Partner Salary Preference</h1>
+                            <input type="text" class="form-control" id="partner" />
+                            <p class="paragraph" id="partnerPara"></p>
+                        </div> -->
+                        <div class="mb-3">
+                            <h1 class="heading">Phone Number</h1>
+                            <input type="tel" id="phoneNumber" class="form-control">
+                            <p class="paragraph" id="phoneNumberPara"></p>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <button class="btn btn-primary mr-2 sizing-btn"> Submit </button>
+                            <button class="btn btn-secondary ml-2 sizing-btn"> Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="contact-us-section" id="contactUsSection">
+            <div class="wcu-card p-3 mb-3">
+                <h1 class="wcu-card-title mt-3">
+                    Contact Us
+                </h1>
+                <p class="wcu-card-description">
+                    Mr. Murugavel Janakiraman <br />
+                    Managing Director <br />
+                    No 94, TVH Beliciaa Towers, <br />
+                    Tower 2, 5th Floor, MRC Nagar, <br />
+                    Chennai - 600 028 <br />
+                    Telephone: +91- 44 4900 1919 <br />
+                    Email: compliance@matrimony.com <br />
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--  <div class="register-section" id="sectionRegister">
+       <div class="container">
+           <h1 class="register-heading">Register</h1>
+           <p class="r-para">Please fill in this form to create an account.</p>
+           <form>
+               <div class="mb-3">
+                   <h1 class="r-heading">Email</h1>
+                   <input type="text" placeholder="Enter Email" class="form-control" />
+               </div>
+               <div class="mb-3">
+                   <h1 class="r-heading">Password</h1>
+                   <input type="text" placeholder="Enter Password" class="form-control" />
+               </div>
+               <div class="mb-3">
+                   <h1 class="r-heading">Confirm Password</h1>
+                   <input type="text" placeholder="Confirm Password" class="form-control" />
+               </div>
+               <div class="mb-3">
+                   <label>
+                       <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                   </label>
+               </div>
+               <p class="r-link">By creating an account you agree to our <a href="#" style="text-decoration: underline">Terms & Privacy</a></p>
+               <div class="d-flex flex-row justify-content-center p-3">
+                   <button class="btn btn-primary m-5">Register</button>
+               </div>
+               <p class="r-link">Already have an account?<a href="#" style="text-decoration: underline">Sign in</a></p>
+           </form>
+       </div>
+   </div> -->
+    <div class="locate-us-section" id="locateUsSection">
+        <a href="https://goo.gl/maps/Q5mJNjqb6wDqrHim6">Locate Us</a>
+    </div>
+    <div class="terms-conditions-section" id="termsConditionsSection">
+        <h1 class="t-heading">DEAR USER: </h1>
+        <p class="t-para">PLEASE READ THESE TERMS AND CONDITIONS BEFORE REGISTRATION. <br />
+            By registering on BharatMatrimony.com, you explicitly understand and agree that : </p> <br />
+        <ul class="unordered-list">
+            <li class="list">The minimum age for registering is 18 years for women and 21 years for men. </li> <br />
+            <li class="list">You are not disabled by any law from entering into a contract. </li> <br />
+            <li class="list">You have gone through the Terms and Conditions and agree to be bound by them. </li> <br />
+        </ul>
+    </div>
+    <!-- </div> -->
+    <!--   </div> -->
+    <div id="homeSection" class="home-section">
+        <h1 class="profile-heading">Profiles</h1>
+        <p class="profile-paragraph">See the various details of the profiles available here.</p>
+        <div class="images-container d-flex flex-row">
+            <div class="container1 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640858579/sai-1_ej1bnj.jpg" class="profile-images" />
+            </div>
+            <div class="container2 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640858614/sravya-1_zo1zpb.jpg" class="profile-images" />
+            </div>
+            <div class="container3 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640858639/hemanth-3_wjquj5.jpg" class="profile-images" />
+            </div>
+            <div class="container4 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640858526/manasa-1_qjsmjo.jpg" class="profile-images" />
+            </div>
+            <div class="container5 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640859873/sk-2_nubwbm.jpg" class="profile-images" />
+            </div>
+        </div>
+        <div class="images-container1 d-flex flex-row">
+            <div class="container6 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640861282/p-1_ljw6jp.jpg" class="profile-images" />
+            </div>
+            <div class="container7 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640861243/d-1_mkb9e0.jpg" class="profile-images" />
+            </div>
+            <div class="container8 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640858426/sa-3_v00xnc.jpg" class="profile-images" />
+            </div>
+            <div class="container9 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640861120/adhi-3_i8sb9j.jpg" class="profile-images" />
+            </div>
+            <div class="container10 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640861000/bhagi-3_uxbryf.jpg" class="profile-images" />
+            </div>
+        </div>
+        <div class="images-container3 d-flex flex-row">
+            <div class="container11 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640860845/j-2_qkadz4.jpg" class="profile-images" />
+            </div>
+            <div class="container12 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640860817/b-3_zbq2cc.jpg" class="profile-images" />
+            </div>
+            <div class="container13 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640860785/ja-2_igvhn2.jpg" class="profile-images" />
+            </div>
+            <div class="container14 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640860597/shabnam-3_ysu94l.jpg" class="profile-images" />
+            </div>
+            <div class="container15 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640860390/h-2_uefkid.jpg" class="profile-images" />
+            </div>
+        </div>
+        <div class="images-container4 d-flex flex-row">
+            <div class="container16 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640860341/meghana-3_f7re9s.jpg" class="profile-images" />
+            </div>
+            <div class="container17 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640860261/lavanya-3_syw56v.jpg" class="profile-images" />
+            </div>
+            <div class="container18 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640860033/srilekha-1_f7ncgj.jpg" class="profile-images" />
+            </div>
+            <div class="container19 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640859752/s-2_vqpihu.jpg" class="profile-images" />
+            </div>
+            <div class="container20 m-3">
+                <img src="https://res.cloudinary.com/dbtulqwpw/image/upload/v1640858674/laxmi-3_jg4chs.jpg" class="profile-images" />
+            </div>
+        </div>
+        <div id="sectionLogIn" class="final-section">
+            <p class="final-para">For more details about the profiles, again log in the below page and visit the respective pages.</p>
+            <div class="container">
+                <h1 class="signup-heading">Log In</h1>
+                <p class="s-para">Please fill in this form to create an account.</p>
+                <form>
+                    <div class="mb-3">
+                        <h1 class="s-heading">Email</h1>
+                        <input type="text" placeholder="Enter Email" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <h1 class="s-heading">Password</h1>
+                        <input type="text" placeholder="Enter Password" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <h1 class="s-heading">Confirm Password</h1>
+                        <input type="text" placeholder="Confirm Password" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+                    </div>
+                    <p class="s-link">By creating an account you agree to our <a href="#" style="text-decoration: underline">Terms & Privacy</a></p>
+                    <div class="d-flex flex-row justify-content-center p-3">
+                        <button class="btn btn-primary m-5">Cancel</button>
+                        <button class="btn btn-secondary m-5">Log In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="grievanceComplaintsSection" class="report-section">
+        <div class="grievance-container">
+            <h1 class="r-heading">REPORT VIOLATION</h1>
+            <p class="r-para">We work with cyber police to take into custody people who misuse our services.We need your <br />
+                support and co-operation to stop violation.You can alert us by sending us e-mail to <br />
+                <a href="reportabuse@bharatmatrimony.com"></a> and we will take necessary actions.Also, while reporting <br />
+                such complaints, please provide all evidence including any e-mail (Full header of the email) you may have received.
+            </p>
+            <h1 class="r-heading">Note: We will not disclose your identity to the miscreant</h1>
+            <h1 class="r-heading">Some examples of violation: </h1>
+            <ul class="grievance-list">
+                <li class="r-list">If a member sends you obscene or inappropriate e-mails.</li>
+                <li class="r-list">If you suspect a member's profile to be obscene or fraudulent.</li>
+                <li class="r-list">If a member is sending you harassing e-mails.</li>
+                <li class="r-list">If you suspect a member's photograph is not real.</li>
+                <li class="r-list">If you notice any other business / individual trying to solicit you with ads or other material.</li>
+            </ul>
+            <form>
+                <div class="mb-3">
+                    <h1 class="h">About Category</h1>
+                    <select name="dropdown" id="categorySelection">
+                        <option value="CSE-3A" id="sec">Member's profile is obscene / fraud</option>
+                        <option value="CSE-3B" id="sec">Member's details are inappropriate</option>
+                        <option value="CSE-3C" id="sec">Member has duplicate profile</option>
+                        <option value="CSE-3D" id="sec">Member's photo is not real</option>
+                        <option value="CSE-3E" id="sec">Wrong phone number / not reachable</option>
+                        <option value="CSE-3F" id="sec">Member sends unsolicited and illicit email/ads</option>
+                        <option value="CSE-3G" id="sec">Member's marriage is fixed</option>
+                        <option value="CSE-3H" id="sec">Membern is engaged</option>
+                        <option value="CSE-3I" id="sec">Member has got married</option>
+                        <option value="CSE-3J" id="sec">Other reasons</option>
+                        <option value="CSE-3K" id="sec" selected>-select-</option>
+                    </select>
+                    <p id="categorySelect"></p>
+                </div>
+                <div class="mb-3">
+                    <h1 class="h">Subject</h1>
+                    <input type="text" id="rSubject" />
+                    <p id="rPara"></p>
+                </div>
+                <div class="mb-3">
+                    <h1 class="h">Complaint Details</h1>
+                    <input type="text" id="complaint" />
+                    <p id="rComplaint"></p>
+                </div>
+                <div class="mb-3">
+                    <h1 class="h">Paste Evidence, if Any</h1>
+                    <input type="text" id="evidence" />
+                    <p id="rEvidence"></p>
+                </div>
+                <div class="mb-3">
+                    <h1 class="h">Complaint against Matrimony ID</h1>
+                    <input type="text" id="matrimony" />
+                    <p id="rMatrimony"></p>
+                </div>
+                <div class="mb-3">
+                    <h1 class="h">Email ID</h1>
+                    <input type="text" id="rEma" />
+                    <p id="rEmail"></p>
+                </div>
+                <div class="buttons-container d-flex flex-row">
+                    <button class="button btn btn-primary m-3">Submit</button>
+                    <button class="button btn btn-secondary m-3">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
